@@ -20,20 +20,15 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-//$(document).on('click', function togglePlay(){
-//    document.getElementById("my_audio").play();
-//    console.log('Shaadi me zaroor aana');
-//});
+$(document).on('click', function togglePlay(){
+    document.getElementById("my_audio").play();
+    console.log('Shaadi me zaroor aana');
+});
 
-var audioElement= document.getElementById("my_audio");
-function togglePlay() {
-    if (audioElement.paused) {
-        audioElement.play();
-    }
-    else {
-        audioElement.pause();
-    }
-};
+$(document).on('click', function togglePlay(){
+    document.getElementById("my_audio").pause();
+    console.log('Shaadi me zaroor aana');
+});
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 10, 2022 00:00:00").getTime();
