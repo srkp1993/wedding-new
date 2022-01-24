@@ -20,10 +20,15 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-$(document).on('click', function(){
-    document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
-});
+//$(document).on('click', function togglePlay(){
+//    document.getElementById("my_audio").play();
+//    console.log('Shaadi me zaroor aana');
+//});
+var myAudio = document.getElementById("my_audio");
+
+function togglePlay() {
+  return my_audio.paused ? my_audio.play() : my_audio.pause();
+};
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 10, 2022 00:00:00").getTime();
