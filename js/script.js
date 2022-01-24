@@ -24,10 +24,15 @@
 //    document.getElementById("my_audio").play();
 //    console.log('Shaadi me zaroor aana');
 //});
-var myAudio = document.getElementById("my_audio");
 
+var audioElement= document.getElementById("my_audio");
 function togglePlay() {
-  return my_audio.paused ? my_audio.play() : my_audio.pause();
+    if (audioElement.paused) {
+        audioElement.play();
+    }
+    else {
+        audioElement.pause();
+    }
 };
 
 // Set the date we're counting down to
