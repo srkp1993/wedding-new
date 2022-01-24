@@ -25,10 +25,6 @@ $(document).on('click', function togglePlay(){
     console.log('Shaadi me zaroor aana');
 });
 
-$(document).on('click', function togglePlay(){
-    document.getElementById("my_audio").pause();
-    console.log('Shaadi me zaroor aana');
-});
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 10, 2022 00:00:00").getTime();
