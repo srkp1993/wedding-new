@@ -20,24 +20,12 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-//$(document).on('click', function togglePlay(){
-    //document.getElementById("my_audio").play();
-    //console.log('Shaadi me zaroor aana');
-//});
+$(document).on('click', function togglePlay(){
+    document.getElementById("my_audio").play();
+    console.log('Shaadi me zaroor aana');
+});
 
-function togglePlay() {
-  var audio = document.getElementsByTagName("my_audio")[0];
-   
-  if (audio) {
-    if (audio.paused) {
-        audio.play();
-       document.getElementById("button").src = "https://image.flaticon.com/icons/svg/149/149658.svg";
-    } else {
-        audio.pause();
-        document.getElementById("button").src ="https://image.flaticon.com/icons/svg/149/149657.svg";
-    }
-  }
-}
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 10, 2022 00:00:00").getTime();
